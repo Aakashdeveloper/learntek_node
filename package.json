@@ -4,6 +4,7 @@
   "description": "\"this is for learning node\"",
   "main": "nativ.js",
   "scripts": {
+    "start":"nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,6 +15,7 @@
   "author": "learntek",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1"
   }
 }
