@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Storystrap Template</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
-	</head>
-	<body>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Storystrap Template</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--bower:css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!--endbower-->
+        <!-- bower:js -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- endbower -->
+        <!-- inject:css-->
+        <link rel="stylesheet" href="/css/styles.css">
+        <!-- endinject-->
+        <!--inject:js-->
+        <script src="/js/app.js"></script>
+        <!--endinject-->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
 <header class="navbar navbar-bright navbar-fixed-top" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -23,14 +34,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <a href="/" class="navbar-brand">Home</a>
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-         <% for(var i=0;i<nav.length;i++) {%>
-        <li>
-          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
-        </li>
-        <% } %>
+            <% for(var i=0; i<nav.length;i++){%>
+                <li><a href="<%=nav[i].Link%>"><%=nav[i].Text%></a></li>
+            <%}%>
       </ul>
       <ul class="nav navbar-right navbar-nav">
         <li class="dropdown">
@@ -50,7 +60,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1><%=title%>
+        <h1>Storystrap
           <p class="lead"></p>
         </h1>
       </div>
@@ -59,7 +69,7 @@
           <div class="row">
             <div class="col-sm-12">
               
-			
+      
             </div>
           </div>
         </div>
@@ -95,11 +105,11 @@
               <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/men/58.jpg" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3>Repurpose Content to Reach a Wider Audience</h3>
+              <h3>Book Title</h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><span class="label label-default">97thfloor.com</span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted">2 hours ago  • <a href="#" class="text-muted">Read More</a></small>
+                  <h4><span class="label label-default">Genre</span></h4><h4>
+                  
                   </h4></div>
                 <div class="col-xs-3"></div>
               </div>
@@ -107,7 +117,8 @@
             </div>
           </div>
           <hr>
-          
+         
+ 
           <!--/stories-->
           
           
@@ -117,9 +128,9 @@
         </div>
       </div>
                                                                                        
-	                                                
+                                                  
                                                       
-   	</div><!--/col-12-->
+    </div><!--/col-12-->
   </div>
 </div>
                                                 
@@ -133,8 +144,8 @@
       <h1>Follow Us</h1>
       <div class="btn-group">
        <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
-	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
-	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+     <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+     <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
       </div>
       
     </div>
@@ -163,8 +174,5 @@
     </div>
   </div>
 </footer>
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</body>
+  </body>
 </html>
