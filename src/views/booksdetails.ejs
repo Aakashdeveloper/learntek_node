@@ -34,14 +34,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">Home</a>
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-            <% for(var i=0; i<nav.length;i++){%>
-                <li><a href="<%=nav[i].Link%>"><%=nav[i].Text%></a></li>
-            <%}%>
+        <% for(var i=0;i<nav.length;i++) {%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        </li>
+        <% } %>
       </ul>
+ 
       <ul class="nav navbar-right navbar-nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
@@ -105,13 +107,15 @@
               <a class="story-title" href="#"><img alt="" src="http://api.randomuser.me/portraits/thumb/men/58.jpg" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3>Book Title</h3>
+              <h3><%=book.title%></h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><span class="label label-default">Genre</span></h4><h4>
+                  <h4><span class="label label-default"><%=book.genre%></span></h4><h4>
                   
                   </h4></div>
-                <div class="col-xs-3"></div>
+                <div class="col-xs-3">
+                  <a href="/books">Back</a>
+                </div>
               </div>
               <br><br>
             </div>

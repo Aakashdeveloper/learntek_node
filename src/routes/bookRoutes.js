@@ -62,7 +62,9 @@ bookRouter.route('/')
 
 bookRouter.route('/:id')
     .get(function(req,res){
-       res.render('booksdetails',{nav:nav,title:"Books Detail Page"});
+        var id = req.params.id;
+       res.render('booksdetails',
+       {nav:nav,title:"Books Detail Page",book:books[id]});
     });
     return bookRouter
 }
