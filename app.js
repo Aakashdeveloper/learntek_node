@@ -16,6 +16,8 @@ var navbar=[
 ]
 
 var bookRouter = require('./src/routes/bookRoutes')(navbar);
+var AdminRouter = require('./src/routes/adminRoutes')(navbar);
+
 app.get("/",function(req,res){
     //res.send("Hello world")
     res.render('index',{nav:navbar,title:"Home Page",});
@@ -23,6 +25,7 @@ app.get("/",function(req,res){
 
 
 app.use('/books',bookRouter);
+app.use('/Admin',AdminRouter);
 
 app.get("/authors",function(req,res){
     res.send("Page coming soon")
