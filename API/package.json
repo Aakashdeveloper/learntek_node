@@ -4,13 +4,15 @@
   "description": "",
   "main": "Api.js",
   "scripts": {
-    "start":"nodemon Api.js",
+    "start": "nodemon Api.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "mongoose": "^4.12.2"
+    "mongoose": "^4.12.2",
+    "mssql": "^4.1.0",
+    "mysql": "^2.15.0"
   }
 }
